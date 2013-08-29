@@ -14,7 +14,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 // Register assetic and set up CSSMin
-$app->register(new SilexAssetic\AsseticExtension(), array(
+$app->register(new SilexAssetic\AsseticServiceProvider(), array(
     'assetic.path_to_web' => __DIR__,
     'assetic.options' => array(
         'auto_dump_assets' => true,
